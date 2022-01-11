@@ -1,5 +1,5 @@
 # Computing Concept Referring Expressions for Ontologies
-This project is concerned with the computation of concept referring expressions in order to return both explicitly named and implicitly given, anonymous individuals as answers for ageneralized instance retrieval query on Horn-ALC ontologies. In particular, a Java implementation is provided for an algorithm where reasoners are considered as black box.
+This project is concerned with the computation of concept referring expressions in order to return both explicitly named and implicitly given, anonymous individuals as answers for a generalized instance retrieval query on Horn-ALC ontologies. In particular, a Java implementation is provided for an algorithm where reasoners are considered as black box.
 An example of how to execute the algorithm is provided in the class [Main](src/main/java/com/ai/cre/algo/Main.java), while a general performance evaluation based on runtime measurements can be done by means of the class [RuntimeEvaluation](src/main/java/com/ai/cre/evaluation/RuntimeEvaluation.java).
 
 
