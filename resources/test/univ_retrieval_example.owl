@@ -1,0 +1,20 @@
+Ontology(<univ_retrieval_example.owl>
+
+Declaration(Class(<A>))
+Declaration(Class(<B>))
+Declaration(Class(<C>))
+Declaration(Class(<D>))
+Declaration(Class(<E>))
+Declaration(Class(<F>))
+
+Declaration(ObjectProperty(<R>))
+Declaration(ObjectProperty(<S>))
+
+SubClassOf(<C> ObjectAllValuesFrom(<R> <A>))
+SubClassOf(<C> ObjectAllValuesFrom(<R> <E>))
+SubClassOf(<A> <E>)
+SubClassOf(ObjectAllValuesFrom(<R> <E>)  ObjectAllValuesFrom(<S> <D>))
+SubClassOf(<C> ObjectAllValuesFrom(<R> <B>))
+SubClassOf(ObjectAllValuesFrom(<R> <F>)  ObjectAllValuesFrom(<S> <D>))
+
+)

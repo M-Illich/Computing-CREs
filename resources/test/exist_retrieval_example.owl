@@ -1,0 +1,21 @@
+Ontology(<exist_retrieval_example.owl>
+
+Declaration(Class(<A>))
+Declaration(Class(<B>))
+Declaration(Class(<C>))
+Declaration(Class(<D>))
+Declaration(Class(<E>))
+Declaration(Class(<F>))
+
+Declaration(ObjectProperty(<R>))
+Declaration(ObjectProperty(<S>))
+
+SubClassOf(<C> ObjectSomeValuesFrom(<R> <A>))
+SubClassOf(<C> ObjectSomeValuesFrom(<R> <E>))
+SubClassOf(<A> <E>)
+SubClassOf(ObjectSomeValuesFrom(<R> <E>)  ObjectSomeValuesFrom(<S> <D>))
+SubClassOf(<C> ObjectSomeValuesFrom(<S> <B>))
+SubClassOf(ObjectSomeValuesFrom(<R> <E>)  ObjectSomeValuesFrom(<S> <B>))
+SubClassOf(ObjectSomeValuesFrom(<R> <F>)  ObjectSomeValuesFrom(<S> <D>))
+
+)

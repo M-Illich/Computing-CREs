@@ -1,0 +1,35 @@
+Ontology(<test_ontology.owl>
+
+Declaration(Class(<A>))
+Declaration(Class(<B>))
+Declaration(Class(<C>))
+Declaration(Class(<D>))
+Declaration(Class(<E>))
+Declaration(Class(<F>))
+Declaration(Class(<G>))
+
+Declaration(ObjectProperty(<R>))
+Declaration(ObjectProperty(<S>))
+
+SubClassOf(<A> ObjectSomeValuesFrom(<R> ObjectSomeValuesFrom(<S> <B>)))
+SubClassOf(ObjectAllValuesFrom(<S> <C>) ObjectComplementOf(ObjectSomeValuesFrom(<R> <D>)))
+SubClassOf(ObjectComplementOf(ObjectAllValuesFrom(<R> <A>)) ObjectIntersectionOf(<B> ObjectAllValuesFrom(<S> <C>)))
+
+SubClassOf(<E> <F>)
+SubClassOf(<F> <G>)
+
+ClassAssertion(<A> <a>)
+ClassAssertion(<B> <b>)
+ClassAssertion(<A> <c>)
+ClassAssertion(<D> <d>)
+
+ClassAssertion(<B> <a>)
+ClassAssertion(ObjectIntersectionOf(<C> <B>) <a>)
+ClassAssertion(ObjectSomeValuesFrom(<R> ObjectSomeValuesFrom(<S> <B>)) <a>)
+
+ObjectPropertyAssertion(<R> <a> <b>)
+ObjectPropertyAssertion(<R> <a> <c>)
+ObjectPropertyAssertion(<S> <a> <d>)
+ObjectPropertyAssertion(<R> <b> <d>)
+
+)

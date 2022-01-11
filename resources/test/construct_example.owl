@@ -1,0 +1,27 @@
+Ontology(<construct_example.owl>
+
+Declaration(Class(<A>))
+Declaration(Class(<B>))
+Declaration(Class(<C>))
+Declaration(Class(<D>))
+Declaration(Class(<E>))
+
+Declaration(ObjectProperty(<R>))
+Declaration(ObjectProperty(<S>))
+
+
+SubClassOf(<A> ObjectSomeValuesFrom(<R> <B>))
+SubClassOf(<A> ObjectSomeValuesFrom(<S> <C>))
+SubClassOf(<A> ObjectSomeValuesFrom(<R> <D>))
+SubClassOf(<B> ObjectSomeValuesFrom(<R> <D>))
+SubClassOf(<B> ObjectSomeValuesFrom(<S> <E>))
+SubClassOf(<C> ObjectSomeValuesFrom(<S> <C>))
+
+SubClassOf(<B> ObjectAllValuesFrom(<R> <C>))
+
+ClassAssertion(<A> <a>)
+ClassAssertion(<D> <d>)
+
+ObjectPropertyAssertion(<R> <a> <d>)
+
+)

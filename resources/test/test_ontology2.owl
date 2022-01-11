@@ -1,0 +1,28 @@
+Ontology(<test_ontology2.owl>
+
+Declaration(Class(<A>))
+Declaration(Class(<B1>))
+Declaration(Class(<B2>))
+Declaration(Class(<B3>))
+Declaration(Class(<E>))
+
+Declaration(ObjectProperty(<R>))
+Declaration(ObjectProperty(<S>))
+
+SubClassOf(<C> ObjectAllValuesFrom(<R> <B1>))
+SubClassOf(<B2> ObjectAllValuesFrom(<S> <B3>))
+SubClassOf(ObjectSomeValuesFrom(<S> <E>) <E>)
+
+ClassAssertion(<A> <a>)
+ClassAssertion(<B2> <b>)
+ClassAssertion(<C> <c>)
+ClassAssertion(<E> <e>)
+
+ObjectPropertyAssertion(<R> <c> <b>)
+ObjectPropertyAssertion(<S> <c> <a>)
+ObjectPropertyAssertion(<R> <d> <b>)
+ObjectPropertyAssertion(<R> <d> <c>)
+ObjectPropertyAssertion(<R> <e> <e>)
+ObjectPropertyAssertion(<S> <e> <e>)
+
+)
