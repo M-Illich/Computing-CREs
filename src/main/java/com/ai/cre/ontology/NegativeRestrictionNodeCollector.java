@@ -11,8 +11,8 @@ import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 /**
  * An implementation of {@link OWLClassExpressionVisitorEx} to collect both
  * existential and universal restrictions from {@link OWLCLassExpression}
- * objects in form of {@link ConceptNode} objects that appear positively on the
- * right-hand side of axioms. Counterpart to
+ * objects in form of {@link ConceptNode} objects that appear negatively on the
+ * left-hand side of axioms. Counterpart to
  * {@link PositiveRestrictionNodeCollector}.
  *
  */
